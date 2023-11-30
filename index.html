@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position</title>
+    <style>
+        .container {
+            border: 1px dashed salmon;
+            min-height: 200px;
+            position: relative;
+            z-index: 22;
+        }
+        .item {
+            background-color: aqua;
+            border: 1px solid blue;
+            padding: 140x;
+        }
+        .item2 {
+            position: absolute;
+            background-color: blueviolet;
+            top: 10px;
+            left: 10px;
+            right: 10px;
+            bottom: 10px;
+            z-index: 1;
+        }
+        .item2x{
+            background-color: bisque;
+            position: absolute;
+            left: 20px;
+            right: 20px;
+            top: 10px;
+            bottom: 50%;
+        }
+        .item1 {
+            position: relative;
+            z-index: 5;
+            opacity: 0.7;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>CSS Positions</h1>
+    <div class="container">
+        <div class="item item1">Item1</div>
+        <div class="item item2">
+        <div class="item2x">
+            item2x
+        </div>
+    </div>
+        <div class="item">Item3</div>
+    </div>
+</body>
+</html>
